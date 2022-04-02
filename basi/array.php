@@ -44,6 +44,7 @@ $verde = $colori[1];
             
             <?php } ?>
 
+            
             <!-- fine loop -->
             
         </ul>
