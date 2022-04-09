@@ -1,6 +1,6 @@
 <?php
-include "../lib/tools.php";
-
+require_once "../lib/tools.php";
+echo "<h3>".basename(__FILE__)."</h3>";
 if(is_cap('10100') !== true){
     echo "fallito 10100 è un cap valido<br>";
 }
