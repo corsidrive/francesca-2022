@@ -3,6 +3,7 @@
 $input_utente = $_GET['comune_cap'];
 $comuneDaCercare = str_replace(' ', '', mb_strtolower($_GET['comune_cap']));
 
+# capire se è un cap o un comune 
 //controllo input
 if (preg_match("/[0-9]/", $comuneDaCercare) && preg_match("/[a-z]/", $comuneDaCercare) && !preg_match("/[àèéìòù']/", $comuneDaCercare) && $comuneDaCercare !== '') {
     echo "Inserisci solo il nome o solo il cap<br>";
@@ -17,6 +18,7 @@ if (preg_match("/[0-9]/", $comuneDaCercare) && preg_match("/[a-z]/", $comuneDaCe
 }
 
 
+// $elenco = importaJSON(comuni.json)
 $comuni = file_get_contents("comuni.json");
 $comuni = json_decode($comuni, true);
 $comuneTrovato = NULL;
@@ -28,6 +30,13 @@ foreach ($comuni as $comune) {
     $caps = $comune['cap'];
     $listaCap = implode(", ", array_values($caps));
 
+    /**
+     * is_comune
+     *      cerca($comuneDacercare,$nome)
+     * 
+     * is_cap()
+     *       
+     */
     if(ctype_alpha($comuneDaCercare) || !preg_match("/[0-9]/", $comuneDaCercare) && preg_match("/[àèéìòù']/", $comuneDaCercare) && !preg_match('/[\/~`\!@#\$%\^&\*\(\)_\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $comuneDaCercare)) {
         //ricerca per nome
         $cercaInComune = str_replace(' ', '', mb_strtolower($comune['nome']));
