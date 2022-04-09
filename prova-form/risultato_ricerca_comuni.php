@@ -18,6 +18,7 @@ if (preg_match("/[0-9]/", $comuneDaCercare) && preg_match("/[a-z]/", $comuneDaCe
 }
 
 
+// $elenco = importaJSON(comuni.json)
 $comuni = file_get_contents("comuni.json");
 $comuni = json_decode($comuni, true);
 $comuneTrovato = NULL;
