@@ -55,3 +55,5 @@ function sostituisciAccentate(string $originale)
     );
     return strtr($originale, $unwanted_array);
 }
+
+
