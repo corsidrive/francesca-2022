@@ -1,8 +1,12 @@
 <?php
 include_once "../lib/tools.php";
 echo "<h3>".basename(__FILE__)."</h3>";
+/**
+ * Scrivere almeno tre lettere 
+ */
 
 $tests = [
+    //utente scrive input ,  Nome comune dove stai cerando ,risultato atteso
     ["Tor","Torino",true,__LINE__],
     ["tor","Torino",true,__LINE__],
     ["Tor","Tortona",true,__LINE__],
@@ -27,7 +31,8 @@ $tests = [
 
 $fallimenti = 0;
 foreach ($tests as $test) {
-    list ($parolaDaCarcare,$parolaDaConfrontare,$risultatoAtteso,$linea) = $test;
+
+    list($parolaDaCarcare,$parolaDaConfrontare,$risultatoAtteso,$linea) = $test;
     
     if(!(cerca($parolaDaCarcare,$parolaDaConfrontare) === $risultatoAtteso)){
         $fallimenti++;
@@ -37,7 +42,7 @@ foreach ($tests as $test) {
 echo "fallimenti: $fallimenti su ".count($tests)."<br>";
 
 
-// cerca('Tor','Tortona') === true; 
+// if(cerca('Tor','Tortona') === true; 
 // cerca('Tor  ','Tortona') === true; 
 // cerca('Tor','Torino') === true; 
 // cerca('tor','Torino') === true; 
