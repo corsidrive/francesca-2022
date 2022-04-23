@@ -1,0 +1,21 @@
+{
+    "email": "aaa@gmail.com",
+    "password": "z<x<zx<zx<zx<",
+    "indirizzo": {
+        "address": "Via Ormea, 78\/A",
+        "city": "Torino",
+        "provincia": "TO",
+        "zip": "10125"
+    },
+    "colori": [
+        "#ff0000",
+        "#00ff00",
+        "#00f"
+    ],
+    "colore_detestato": "#00ff00",
+    "viaggi": [
+        "CH",
+        "UK",
+        "US"
+    ]
+}
