@@ -1,11 +1,10 @@
 USE francesca;
 -- elmina database
 -- https://www.w3schools.com/sql/sql_drop_db.asp
-DROP DATABASE francesca;
+DROP DATABASE francesca_db;
 -- crea database
 -- https://www.w3schools.com/sql/sql_create_db.asp
-CREATE DATABASE francesca 
-DEFAULT CHARACTER SET = 'utf8mb4';
+CREATE DATABASE francesca_db;
 
 -- creazione di una tabella
 -- https://www.w3schools.com/sql/sql_create_table.asp
@@ -21,7 +20,7 @@ CREATE TABLE Persons (
 */
 DROP TABLE cliente;
 CREATE TABLE cliente (
-    cliente_id int ,
+    cliente_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255),
     cognome VARCHAR(255),
     email VARCHAR(255)  NOT NULL UNIQUE,
@@ -29,14 +28,15 @@ CREATE TABLE cliente (
 ); 
 
 CREATE TABLE citta (
-    citta_id int(10),
-    nome VARCHAR(255),
-    regione_id  int(10)  
+    citta_id int(10) NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    regione_id  int(10) NOT NULL,
+    PRIMARY KEY (citta_id)  
 );
 
 CREATE TABLE regioni (
-    regione_id int(10),
-    nome VARCHAR(255)
+    regione_id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
 );
 
 -- https://www.w3schools.com/sql/sql_insert.asp
@@ -48,31 +48,36 @@ VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway
 
 truncate regioni;
 
-insert INTO regioni (regione_id,nome)
-            VALUES  (1,'Piemonte')
-                    ,(2,'Lazio')
+insert INTO regioni (nome)
+            VALUES  ('Piemonte'),('Lazio')
                     ;
 
 
-insert  INTO citta (citta_id,nome,regione_id)
-        VALUES     (1,'Torino',1)
-                  ,(2,'Asti',1)
-                  ,(3,'Roma',2)
+insert  INTO citta (nome,regione_id)
+        VALUES     ('Torino',1)
+                  ,('Asti',1)
+                  ,('Roma',2)
                   ;
 
 
 truncate cliente;
-insert into cliente (nome,cognome,citta_id,cliente_id,email)
-        VALUES      ('Mario','Rossi',1,1,'a@b.it'),
-                    ('Gianni',NULL,1,2,'b@b.it')
-                    ,('Alessandra','Rossi',2,3,'c@b.it')
-                    ,('Mario','Verdi',3,4,'d@b.it')
-                    ,('Maria','Verdi',3,5,'e@b.it')
+insert into cliente (nome,    cognome,citta_id,email)
+        VALUES      ('Mario','Rossi' ,1,   'a@b.it'),
+                    ('Gianni',NULL   ,1,     'b@b.it')
+                    ,('Alessandra','Rossi',2,'c@b.it')
+                    ,('Mario','Verdi',3,'d@b.it')
+                    ,('Maria','Verdi',3,'e@b.it')
+                    ;
+
+# Duplicate entry 'a@b.it' for key 'email'
+insert into cliente (nome,cognome,citta_id,email)
+        VALUES      ('Gianni2','Rossi2',1,'z@b.it')
                     ;
 
 
--- REVIEW
 
--- - datatime    
--- - voto       5
--- - cliente_id 3
+delete from cliente WHERE nome = 'Gianni2' ;
+delete from cliente WHERE email = 'e@b.it' ;
+
+delete from cliente WHERE cliente_id = 10;
+
