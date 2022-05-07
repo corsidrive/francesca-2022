@@ -4,6 +4,10 @@
 <!-- inizio form -->
 <form class="row g-3" action="form_utente_action.php" method="POST">
   <div class="col-md-6">
+    <label for="email" class="form-label">Nome</label>
+    <input type="email" name="nome"  class="form-control" id="email">
+  </div>
+  <div class="col-md-6">
     <label for="email" class="form-label">Email</label>
     <input type="email" name="email"  class="form-control" id="email">
   </div>
