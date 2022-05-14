@@ -1,0 +1,402 @@
+{
+  "document": {
+    "id": "doc",
+    "name": "New Document",
+    "version": 15.3,
+    "pages": {
+      "page": {
+        "id": "page",
+        "name": "Page 1",
+        "childIndex": 1,
+        "shapes": {
+          "487f20df-9c2d-4c0a-1239-5cab4e1b2152": {
+            "id": "487f20df-9c2d-4c0a-1239-5cab4e1b2152",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 1,
+            "point": [
+              106,
+              136
+            ],
+            "size": [
+              372,
+              284
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "prodotti",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "d0faa87c-ee9b-420f-388c-7fad2fed2b34": {
+            "id": "d0faa87c-ee9b-420f-388c-7fad2fed2b34",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 2,
+            "point": [
+              640,
+              135
+            ],
+            "size": [
+              372,
+              284
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "prodotti - loggato\n ",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "73be8016-9d5b-4c24-0670-9158d30f5aba": {
+            "id": "73be8016-9d5b-4c24-0670-9158d30f5aba",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 3,
+            "point": [
+              111,
+              75
+            ],
+            "size": [
+              364,
+              42
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "anonimo  - login",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "528d0196-4a4e-4c5c-3caf-29a69c646a14": {
+            "id": "528d0196-4a4e-4c5c-3caf-29a69c646a14",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 4,
+            "point": [
+              645,
+              75
+            ],
+            "size": [
+              364,
+              42
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "francesca- login",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "2703089f-3bb6-4fe9-07c2-e27873d86af9": {
+            "id": "2703089f-3bb6-4fe9-07c2-e27873d86af9",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 5,
+            "point": [
+              745,
+              289
+            ],
+            "size": [
+              165,
+              45
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "prima",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "34863f5d-662d-49e4-274a-11b6db8f8a67": {
+            "id": "34863f5d-662d-49e4-274a-11b6db8f8a67",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "page",
+            "childIndex": 6,
+            "point": [
+              1309,
+              375
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "red",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "4264cc76-02fa-4873-01ce-12a76bc860b4": {
+            "id": "4264cc76-02fa-4873-01ce-12a76bc860b4",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 7,
+            "point": [
+              65,
+              494,
+              0.5
+            ],
+            "rotation": 0,
+            "bend": 0,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  1292.13,
+                  0
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  646.07,
+                  0
+                ]
+              }
+            },
+            "decorations": {},
+            "style": {
+              "color": "red",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "1c18bec6-e732-4b21-34b9-5c193f83f1d5": {
+            "id": "1c18bec6-e732-4b21-34b9-5c193f83f1d5",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 2,
+            "point": [
+              97,
+              537
+            ],
+            "size": [
+              483,
+              101
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "red",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "prodotti | prezzo prima | prezzo normale \nt-shirt | 50 | 100",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "6cb65bcf-123c-4f7c-022b-083a5d266fba": {
+            "id": "6cb65bcf-123c-4f7c-022b-083a5d266fba",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 3,
+            "point": [
+              649,
+              533
+            ],
+            "size": [
+              370,
+              99
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "red",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "utenti",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "cec98bf7-59c4-4c66-0f02-e4a7282fa0dd": {
+            "id": "cec98bf7-59c4-4c66-0f02-e4a7282fa0dd",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 4,
+            "point": [
+              1095,
+              527
+            ],
+            "size": [
+              370,
+              109
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "red",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "sessione\nutente_id (francesca) - entrato",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "29c60b3f-923e-4a7a-3b6b-41ead296da02": {
+            "id": "29c60b3f-923e-4a7a-3b6b-41ead296da02",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 2,
+            "point": [
+              1106,
+              133
+            ],
+            "size": [
+              372,
+              284
+            ],
+            "rotation": 2.6942923620846244,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "prodotti - loggato\n ",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "67110b98-be68-435f-2cc9-8e07340107f1": {
+            "id": "67110b98-be68-435f-2cc9-8e07340107f1",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 6,
+            "point": [
+              1193.23,
+              222.04
+            ],
+            "size": [
+              165,
+              45
+            ],
+            "rotation": 2.6942923620846244,
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "prima",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "bindings": {}
+      }
+    },
+    "pageStates": {
+      "page": {
+        "id": "page",
+        "selectedIds": [
+          "487f20df-9c2d-4c0a-1239-5cab4e1b2152"
+        ],
+        "camera": {
+          "point": [
+            0,
+            0
+          ],
+          "zoom": 1
+        },
+        "editingId": null
+      }
+    },
+    "assets": {}
+  },
+  "assets": {}
+}

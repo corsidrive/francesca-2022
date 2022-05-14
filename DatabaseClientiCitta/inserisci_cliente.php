@@ -3,7 +3,7 @@
 <div class="container mt-5"> <!-- apertura container -->
 
   <!-- inizio-form -->
-  <form id="tagFormRegistraUtente" class="row g-3"  autocomplete="off" novalidate>
+  <form id="tagFormRegistraUtente" class="row g-3 needs-validation"  autocomplete="off" novalidate>
 
     <!-- fields -->
     <div class="col-12">
